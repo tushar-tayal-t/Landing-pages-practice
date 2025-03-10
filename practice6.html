@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+        }
+        header{
+            color: white;
+            background-color: #333;
+            padding: 15px;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        nav h1{
+            font-size: 30px;
+        }
+        ul{
+            list-style: none;            
+            display: flex;
+        }
+        ul li{
+            margin: 0 20px;
+        }
+        ul li a{
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+        ul li a:hover{
+            color:#ff6600;
+        }
+        /* hero section */
+        .hero{
+            background:url('https://plus.unsplash.com/premium_photo-1661883991651-b5487771e9aa?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d2F0ZXJmYWxsfGVufDB8fDB8fHww') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .hero h2{
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .hero p{
+            font-size: 20px;
+        }
+
+        /*Blog container*/
+        .blog-container{
+            display: flex;
+            justify-content: center;
+            padding: 40px;
+            gap: 25px;
+        }
+        .blog-card{
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .blog-card:hover{
+            transform: translateY(-10px);
+        }
+
+        .blog-card img{
+            width: 100%;
+            border-radius: 5px;
+        }
+        .blog-card p{
+            font-size: 13px;
+            margin:10px 0
+        }
+        .blog-card a{
+            color: #ff6600;
+            text-decoration: none;
+        }
+        footer{
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Responsive design */
+        @media (max-width:768px){
+            .blog-container{
+                flex-direction: column;
+                align-items: center;
+            }
+            .blog-card{
+                width: 90%;
+            }
+            nav ul{
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><h1>My Blog</h1></div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Welcome to My Blog</h2>
+            <p>Sharing knowledge and insights on various topics.</p>
+        </section>
+        <section class="blog-container">
+            <article class="blog-card">
+                <img src="https://plus.unsplash.com/premium_photo-1661883991651-b5487771e9aa?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d2F0ZXJmYWxsfGVufDB8fDB8fHww" alt="Image Not loaded">
+                <h3>Blog Post Title</h3>
+                <p>A short excerpt from the blog post...</p>
+                <a href="">Read More</a>
+            </article>
+            <article class="blog-card">
+                <img src="https://plus.unsplash.com/premium_photo-1661883991651-b5487771e9aa?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d2F0ZXJmYWxsfGVufDB8fDB8fHww" alt="Image Not loaded">
+                <h3>Another Blog Post</h3>
+                <p>Some more content preview...</p>
+                <a href="">Read More</a>
+            </article>
+        </section>
+    </main>
+    <footer>&copy; 2025 My Blog. All rights reserved.</footer>
+</body>
+</html>

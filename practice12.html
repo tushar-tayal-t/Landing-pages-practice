@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background: #333;
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+}
+
+/* Skills Section */
+.skill-bar {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.bar {
+    width: 100%;
+    height: 10px;
+    background: lightgray;
+}
+
+.progress {
+    height: 10px;
+    background: blue;
+    width: 0;
+    transition: width 2s;
+}
+
+.html {
+    width: 90%;
+}
+
+.css {
+    width: 85%;
+}
+
+/* Projects */
+.project-card {
+    width: 30%;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* Contact */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid gray;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #222;
+    color: white;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <button class="theme-toggle">🌙</button>
+    </header>
+
+    <section class="hero">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Discover my work, skills, and projects.</p>
+        <a href="#projects" class="btn">View Projects</a>
+    </section>
+
+    <section class="about">
+        <h2>About Me</h2>
+        <p>Passionate web developer with expertise in HTML & CSS.</p>
+    </section>
+
+    <section class="skills">
+        <h2>My Skills</h2>
+        <div class="skill-bar">
+            <p>HTML</p>
+            <div class="bar"><div class="progress html"></div></div>
+        </div>
+        <div class="skill-bar">
+            <p>CSS</p>
+            <div class="bar"><div class="progress css"></div></div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">Project 1</div>
+        <div class="project-card">Project 2</div>
+        <div class="project-card">Project 3</div>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 My Portfolio</p>
+    </footer>
+</body>
+</html>

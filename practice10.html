@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Hotel</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f9fa;
+}
+
+/* Navigation Bar */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('https://t4.ftcdn.net/jpg/08/15/78/47/360_F_815784772_RJWNG7S80zkl2j5SARZkHQ2GEX6rk8jw.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: #ff5733;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Rooms Section */
+.rooms {
+    padding: 50px;
+    text-align: center;
+    background: #fff;
+}
+
+.room-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.room {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.room img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Gallery */
+.gallery {
+    text-align: center;
+    padding: 50px;
+    background: #f8f9fa;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery img {
+    width: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Booking Section */
+.booking {
+    text-align: center;
+    padding: 50px;
+    background: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+input, button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background: #ff5733;
+    color: white;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">Luxury Hotel</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Rooms</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to Luxury Hotel</h1>
+        <p>Experience the best luxury and comfort</p>
+        <a href="#" class="btn">Book Now</a>
+    </section>
+
+    <!-- Rooms Section -->
+    <section class="rooms">
+        <h2>Our Rooms</h2>
+        <div class="room-container">
+            <div class="room">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPwe0Ly2yVVZYQBu4faQ9gdpOrctbuy8sx9g&s" alt="Luxury Room">
+                <h3>Deluxe Suite</h3>
+                <p>$250 / Night</p>
+            </div>
+            <div class="room">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwu7KyWEAVZlzTntOHEmhFG7XnCzoSepK_og&s" alt="Luxury Room">
+                <h3>Presidential Suite</h3>
+                <p>$450 / Night</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9lG8E3eIJ1nsALuZD0jabpQiDAYlHZEtw0g&s" alt="Hotel View">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYom9I_Z4UfppGD6-GLFlm6DGgbAW-PuXHng&s" alt="Luxury Pool">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTDdP8G931cxbETOPmageLceW53qDZdUEi0w&s" alt="Hotel Room">
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section class="booking">
+        <h2>Book Your Stay</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="date" required>
+            <input type="number" placeholder="Nights" required>
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+</body>
+</html>

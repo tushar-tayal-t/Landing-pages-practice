@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branding page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{   
+            background-color: #333;
+            color:white;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        ul li{
+            display: inline;
+            margin:0 5px;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        .hero{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            background-image: url('https://plus.unsplash.com/premium_photo-1661883991651-b5487771e9aa?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d2F0ZXJmYWxsfGVufDB8fDB8fHww');
+            background-repeat: no-repeat;
+            background-position: center ;
+            background-size: cover;
+            color: white;
+        }
+        .btn{
+            background-color: #ff6600;
+            color: #fff;
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border-radius: 7px;
+        }
+        .hero h2{
+            font-size: 2.5rem;
+        }
+        .hero p{
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+        .about{
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Brand</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Our Website</h2>
+            <p>Your journey to a better web experience starts here.</p>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+    </section>
+    <section class="about">
+        <h2>About Us</h2>
+        <p>We provide top-notch services to help you succeed in the digital world.</p>
+    </section>
+</body>
+</html>

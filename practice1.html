@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color:#f0f0f0 ;
+            font-family: Arial, Helvetica, sans-serif;
+            overflow-x: hidden;
+        }
+        header{
+            text-align: center;
+            color:white;
+            font-size: 1.1rem;
+            padding: 20px;
+            background-color: #4CAF50;
+        }
+        section{
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input[type="text"],input[type="email"],textarea{
+            padding: 20px;
+            border-radius: 15px;
+            border:1px solid #ccc;
+            width: 100%;
+            box-sizing: border-box;
+            margin: 15px 0;
+        }
+        input[type="submit"]{
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            border-radius: 20px;
+            border:none;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 40px;
+        }
+        ul li a{
+            color:#4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Personal Webpage!</h1>
+    </header>
+    <section>
+        <h2>About Me</h2>
+        <p>Hello! My name is [Your Name], and this is my personal webpage. I love coding, web development, and creating beautiful websites!</p>
+        <img src="#" alt="Profile image">
+    </section>
+    <section>
+        <form action="url" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <label for="mssg">Message:</label>
+            <textarea name="mssg" id="mssg" rows="4"></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    <section>
+        <h2>Useful Links</h2>
+        <ul>
+            <li><a href="#">Learn HTML at W3Schools</a></li>
+            <li><a href="#">Learn Coding on Codecademy</a></li>
+        </ul>
+    </section>
+    <footer>
+        Created by [Your Name] &copy; 2025 
+    </footer>
+</body>
+</html>
